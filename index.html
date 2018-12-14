@@ -3,10 +3,7 @@
 
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>API Superstore</title>
 
@@ -16,49 +13,39 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">API Superstore</a>
-                  <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Video">Video</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Test">What People Are Saying</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Buy">Buy Now</a>
-            </li>
-          </ul>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">API Superstore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#video">Video</a>
+          <a class="nav-item nav-link" href="#test">Testimonials</a>
+          <a class="nav-item nav-link" href="#info">More Info</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-
-    <header class="masthead text-center text-white">
+    <header class="masthead text-center">
       <div class="masthead-content">
         <div class="container">
-          <img src="/assets/logos/api_superstore_logo_ry.png">
-          <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+          <img src="/assets/logos/api_superstore_logo_ry.png" class="img-fluid" alt="Responsive image"><p>The API Superstore provides fast access to the most cuttingedge APIs available online. Signup and save today!</p>
+          <a href="#contact" class="btn btn-primary btn-xl rounded-pill mt-5">Buy Now!</a>
         </div>
       </div>
-      <div class="bg-circle-1 bg-circle"></div>
-      <div class="bg-circle-2 bg-circle"></div>
-      <div class="bg-circle-3 bg-circle"></div>
-      <div class="bg-circle-4 bg-circle"></div>
-    </header>
+         </header>
 
-    <section>
-      <div class="container">
+    <section id="video">
+      <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
@@ -67,34 +54,59 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">For those about to rock...</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4" >Check out what we can do for you!</h2>
+              <div class="video">
+                  <iframe style="border: 10px solid rgba(0,0,0);" width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" all>ow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section id="test">
+      <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">We salute you!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+              <h2 class="display-4">What are people saying</h2>
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="design/AmyZon.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Amy Zon, Massive Anonymous Customer</h5>
+                    <p class="card-text">“I have really admired the way the API Superstore team has created a truly divine interface for browsing all that information that’s out there online for free. For a low monthly fee, I’m able to more easily keep up with the churn of information that makes application development so difficult, and API Superstore makes my world so much happier! Please don’t stop the rocking!”</p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="design/CPYu.JPG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">C. P. Yu</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="design/ClaraCache.JPG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Clara Cache</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              </div>
     </section>
 
     <section>
-      <div class="container">
+      <div class="container-fluid" id="info">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
@@ -103,14 +115,32 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">Let there be rock!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4">Buy now!</h2>
+              <p>The API Superstore provides a catalog of thirdparty APIs that you can use to enhance your business. From  ecommerce to maps, API Superstore lists all of the services that customers expect and saves you the headache of sorting it out yourself! The longer you wait, the longer you’re not making more money and happier users!</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    
+    <section>
+      <div class="container-fluid" id="contact">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Want to buy now? Contact us!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <a href="#contact" class="btn btn-primary btn-xl rounded-pill mt-5">Buy Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="py-5 bg-black">
       <div class="container">
@@ -120,9 +150,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 
 </html>
